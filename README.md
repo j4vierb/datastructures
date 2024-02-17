@@ -4,7 +4,7 @@ En este repositorio se encontraran los temas de estructuras de datos y algoritmo
 
 Aquí mismo se encontrarán las distintas implementaciones en Java de lo anteriormente mencionado. Asi mismo las notas referentes a cada uno.
 
-Principalmente haré uso de la página de [Geeks for Geeks](https://www.geeksforgeeks.org/), especificamente la sección de [estructuras de datos](https://www.geeksforgeeks.org/data-structures).
+Principalmente haré uso de la página de [Geeks for Geeks](https://www.geeksforgeeks.org/), especificamente la sección de [estructuras de datos](https://www.geeksforgeeks.org/data-structures) y el [tutorial](https://www.geeksforgeeks.org/learn-data-structures-and-algorithms-dsa-tutorial/).
 
 ## Semana 1 - (12/feb - 18/feb)
 
