@@ -14,7 +14,7 @@ public class InsertionSort {
 	 * @return String with the elements in the array using this format
 	 * [1, 2, ..., n]
 	 */
-	public static String printArray(int []arr) {
+	public String printArray(int []arr) {
 		String cadena = "[";
 		for(int i = 0; i < arr.length; i++)
 			cadena += arr[i] + (i == arr.length - 1 ? "" : ", ");
@@ -27,7 +27,7 @@ public class InsertionSort {
 	 * @param arr Array to be sorted
 	 * @return int[] array sorted
 	 */
-	public static int[] insertionSortAlgorithm(int[] arr) {
+	public int[] insertionSortAlgorithm(int[] arr) {
 		// considerer that the first 
 		// element is already sorted
 		for(int i = 1; i < arr.length; i++) {
@@ -50,10 +50,12 @@ public class InsertionSort {
 	 * The driver code. The array is initialized in this
 	 * method
 	 */
-	public static void main(String []args) {
+	public static void main(String []args) throws Exception {
+		InsertionSort run = new InsertionSort();
 		int []arr = {100, 5, 7, 3, 1, 12, 24};
-		System.out.println("The array to be sorted is: " + printArray(arr));
-		int []sol = insertionSortAlgorithm(arr);
-		System.out.println("The ordered array is: " + printArray(sol));
+		
+		System.out.println("The array to be sorted is: " + run.printArray(arr));
+		int[] sol = run.insertionSortAlgorithm(arr);
+		System.out.println("The ordered array is: " + run.printArray(sol));
 	}
 }
