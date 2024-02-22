@@ -47,7 +47,7 @@ public class InsertionSort {
 	}
 
 	/**
-	 * The driver code. The array is initialized in this
+	 * The driver code, the array is initialized in this
 	 * method
 	 */
 	public static void main(String []args) throws Exception {
