@@ -25,3 +25,4 @@ Hacer problemas de programación dinámica, utilizar el curso de programación d
 3. [https://brilliant.org/wiki/backpack-problem/#introduction](https://brilliant.org/wiki/backpack-problem/#introduction)
 4. [https://www.geeksforgeeks.org/dynamic-programming/?ref=shm](https://www.geeksforgeeks.org/dynamic-programming/?ref=shm)
 5. [https://www.geeksforgeeks.org/0-1-knapsack-problem-dp-10/](https://www.geeksforgeeks.org/0-1-knapsack-problem-dp-10/)
+6. [Linux fundamentals pt1](https://tryhackme.com/room/linuxfundamentalspart1/)
