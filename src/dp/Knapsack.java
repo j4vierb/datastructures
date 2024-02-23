@@ -2,7 +2,15 @@ package dp;
 
 /**
  * This class implements in one method the solution
- * to Knapsack problem.
+ * to Knapsack 0-1 problem. The 0-1 says that we can
+ * add the i element one time (1) or not (0).
+ * 
+ * **note**: This problem can be statement like as a problem
+ * of optimization:
+ * 
+ * maximize the value of items
+ * subject to the (sum of weights of the items) less
+ * or equal than W.
  * 
  * @author j4vierb
  */
