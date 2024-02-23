@@ -24,5 +24,8 @@ Hacer problemas de programación dinámica, utilizar el curso de programación d
 2. [https://en.wikipedia.org/wiki/Knapsack_problem](https://en.wikipedia.org/wiki/Knapsack_problem) - `state: ✅`
 3. [https://brilliant.org/wiki/backpack-problem/#introduction](https://brilliant.org/wiki/backpack-problem/#introduction) - `state: ✅`
 4. [https://www.geeksforgeeks.org/dynamic-programming/?ref=shm](https://www.geeksforgeeks.org/dynamic-programming/?ref=shm)
-5. [https://www.geeksforgeeks.org/0-1-knapsack-problem-dp-10/](https://www.geeksforgeeks.org/0-1-knapsack-problem-dp-10/) - `state: ✅|` 
+5. [https://www.geeksforgeeks.org/0-1-knapsack-problem-dp-10/](https://www.geeksforgeeks.org/0-1-knapsack-problem-dp-10/) - `state: ✅` 
 6. [Linux fundamentals pt1](https://tryhackme.com/room/linuxfundamentalspart1/) - `state: ✅`
+7. [Linux fundamentals pt2](https://google.es) - `state: ✅`
+8. [Linux fundamentals pt3](https://google.es) - `state: ✅`
+9. [https://cses.fi/problemset/](https://cses.fi/problemset/list)
