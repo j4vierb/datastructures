@@ -29,3 +29,4 @@ Hacer problemas de programación dinámica, utilizar el curso de programación d
 7. [Linux fundamentals pt2](https://google.es) - `state: ✅`
 8. [Linux fundamentals pt3](https://google.es) - `state: ✅`
 9. [https://cses.fi/problemset/](https://cses.fi/problemset/list)
+10. [https://tryhackme.com/room/sqlinjectionlm](https://tryhackme.com/room/sqlinjectionlm)
