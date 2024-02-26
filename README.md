@@ -30,3 +30,7 @@ Hacer problemas de programación dinámica, utilizar el curso de programación d
 8. [Linux fundamentals pt3](https://google.es) - `state: ✅`
 9. [https://cses.fi/problemset/](https://cses.fi/problemset/list)
 10. [https://tryhackme.com/room/sqlinjectionlm](https://tryhackme.com/room/sqlinjectionlm)
+
+## Semana 3 - (26/feb - 3/marzo)
+
+Continuar con problemas de programación dinamica utilizando el item 10. de la semana anterior. Asimismo, terminar de realizar el problema de Knasack. Hay una semana muy pesada por delante y hay mucho por hacer.
