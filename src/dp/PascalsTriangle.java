@@ -1,7 +1,5 @@
 package dp;
 
-import java.util.ArrayList;
-
 /**
  * This class implements in a method the algorithm to generate
  * the n-th level of the pascal's triangle
@@ -20,6 +18,30 @@ public class PascalsTriangle {
 		String cadena = "[";
 		for(int i = 0; i < arr.length; i++)
 			cadena += arr[i] + (i == arr.length - 1 ? "" : ", ");
+		return cadena + "]";
+	}
+	
+	/**
+	 * This method prints the content of an 2 dimensional array
+	 * 
+	 * @param arr Array (matrix) to be printed
+	 * @return String with the elements in the array using this format
+	 * [
+	 * [1, 1, 1, 1]
+	 * [1, 1, 1, 1]
+	 * [1, 2, 1, 1]
+	 * [1, 3, 3, 1]
+ 	 * ]
+	 */
+	public String print2DArray(int [][]arr) {
+		String cadena = "[\n";
+		for(int i = 0; i < arr.length; i++) {
+			cadena += "[";
+			for(int j = 0; j < arr[i].length; j++) {
+				cadena += arr[i][j] + (j == arr[i].length - 1 ? "" : ", ");
+			}
+			cadena += "]\n";
+		}
 		return cadena + "]";
 	}
 
@@ -50,21 +72,20 @@ public class PascalsTriangle {
 	 * and returns it using dynamic programming
 	 * 
 	 * @param n The n-th level
-	 * @return Array of integers of pascal's triangle
+	 * @return Array of integers calculated for pascal's triangle
 	 */
-	public ArrayList<ArrayList<Integer>> completePascalsTriangle(int n) {
-		ArrayList<ArrayList<Integer>> dp = new ArrayList<>();
+	public int[][] completePascalsTriangle(int n) {
+		int [][]dp = new int[n][];
 
 		for(int i = 0; i < n; i++) {
-			ArrayList<Integer> lvl = new ArrayList<>();
+			dp[i] = new int[i+1];
 			for(int j = 0; j <= i; j++) {
 				if(i == j || j == 0)
-					lvl.add(1);
+					dp[i][j] = 1;
 				else if(i > 1 && j > 0 && j < i) {
-					lvl.add(dp.get(i-1).get(j) + dp.get(i-1).get(j-1));
+					dp[i][j] = dp[i-1][j] + dp[i-1][j-1];
 				}
 			}
-			dp.add(lvl);
 		}
 		return dp;
 	}
@@ -80,8 +101,8 @@ public class PascalsTriangle {
 		int []res = run.pascalsTriangle(n);
 		System.out.println("The " + n + "-th level is: " + run.printArray(res));
 		
-		n = 4;
-		ArrayList<ArrayList<Integer>> ans = run.completePascalsTriangle(n);
-		System.out.println(ans);
+		int [][]ans = run.completePascalsTriangle(n);
+		System.out.println("And the complete triangle is: ");
+		System.out.println(run.print2DArray(ans));
 	}
 }
