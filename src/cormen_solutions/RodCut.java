@@ -1,4 +1,4 @@
-package dp;
+package cormen_solutions;
 
 class RodCut {
     // driver code
