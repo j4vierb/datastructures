@@ -7,4 +7,4 @@ Aquí mismo se encontrarán las distintas implementaciones en Java de lo anterio
 Principalmente haré uso de la página de [Geeks for Geeks](https://www.geeksforgeeks.org/), especificamente la sección de [estructuras de datos](https://www.geeksforgeeks.org/data-structures) y el [tutorial](https://www.geeksforgeeks.org/learn-data-structures-and-algorithms-dsa-tutorial/).
 
 # Indice
-1. [Home](https://github.com/j4vierb/datastructures/wiki)
+1. [Febrero-Marzo](https://github.com/j4vierb/datastructures/wiki)
