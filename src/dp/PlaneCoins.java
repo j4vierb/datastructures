@@ -1,5 +1,8 @@
 package dp;
 
+/** 
+ * @author j4vierb
+ */
 class PlaneCoins {
     /**
      * This method prints the content of an 2 dimensional array
@@ -14,15 +17,15 @@ class PlaneCoins {
      * ]
      */
     public String print2DArray(int [][]arr) {
-            String cadena = "\n";
-            for(int i = 0; i < arr.length; i++) {
-                    cadena += "[";
-                    for(int j = 0; j < arr[i].length; j++) {
-                            cadena += arr[i][j] + (j == arr[i].length - 1 ? "" : ", ");
-                    }
-                    cadena += "]\n";
+    	String cadena = "\n";
+        for(int i = 0; i < arr.length; i++) {
+            cadena += "[";
+            for(int j = 0; j < arr[i].length; j++) {
+                    cadena += arr[i][j] + (j == arr[i].length - 1 ? "" : ", ");
             }
-            return cadena + "\n";
+            cadena += "]\n";
+        }
+        return cadena + "\n";
     }
     
     /**
@@ -43,6 +46,8 @@ class PlaneCoins {
     public int planeCoinsAlgorithm(int [][]matrix) {
     	int rows = matrix.length, cols = matrix[0].length;
     	int [][]dp = new int[rows][cols];
+    	
+    	int maximum = Integer.MIN_VALUE;
 
 		for(int j = 0; j < matrix[0].length; j++) {
 		    for(int i = 0; i < matrix.length; i++) {
@@ -62,28 +67,20 @@ class PlaneCoins {
 		    	} else {
 		    		dp[i][j] = -1;
 		    	}
+		    	
+		    	if(dp[i][j] > maximum)
+		    		maximum = dp[i][j];
 		    }
 		}
 
-		int findMaximum = 0;
-		for(int i = 0; i < matrix.length; i++) {
-			if(dp[i][rows] > findMaximum)
-				findMaximum = dp[i][rows];
-		}
-
-		return findMaximum;
+		return maximum;
     }
     
 	public static void main(String[] args) {
-		int [][]matrix = {
-		    {-1, -1, -1, -1, 0},
-		    {1, 10, 1, -1, 0},
-		    {3, -1, 14, -1, 20},
-		    {-1, -1, -1, 1, 0}
-		};
+		int [][]matrix = {{1, 2, 3}, {4, 5, -1}, {7, 8, 9}};
 		
 		PlaneCoins run = new PlaneCoins();
 		int maximum = run.planeCoinsAlgorithm(matrix);
-		System.out.println("The maximum number of coins is: " + maximum);
+		System.out.println("The maximum amount of coins is: " + maximum);
 	}
 }
