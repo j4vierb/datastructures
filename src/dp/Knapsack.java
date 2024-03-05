@@ -65,20 +65,20 @@ public class Knapsack {
 	 * The driver code, the variables are initialiazed
 	 * in this method
 	 */
-    public static void main(String []args) {
-    	Knapsack run = new Knapsack();
-    	
-    	int []weight = {4, 5, 1};
-    	int []profit = {1, 2, 3};
-    	int W = 4;
-    	int N = 3;
-    	
-    	System.out.println("El número de elementos es: " + N);
-    	System.out.println("La capacidad máxima de la mochila es: " + W);
-    	System.out.println("El peso para cada i-ésimo elemento es: " + run.printArray(weight));
-    	System.out.println("El beneficio para cada i-ésimo elemento es: " + run.printArray(profit));
-    	
-    	int []solution = run.knapsackAlgorithm();
-    	System.out.println("La solución es: " + run.printArray(solution));
-    }
+	public static void main(String []args) {
+		Knapsack run = new Knapsack();
+		
+		int []weight = {4, 5, 1};
+		int []profit = {1, 2, 3};
+		int W = 4;
+		int N = 3;
+		
+		System.out.println("El número de elementos es: " + N);
+		System.out.println("La capacidad máxima de la mochila es: " + W);
+		System.out.println("El peso para cada i-ésimo elemento es: " + run.printArray(weight));
+		System.out.println("El beneficio para cada i-ésimo elemento es: " + run.printArray(profit));
+		
+		int []solution = run.knapsackAlgorithm();
+		System.out.println("La solución es: " + run.printArray(solution));
+	}
 }

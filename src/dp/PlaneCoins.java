@@ -49,7 +49,7 @@ class PlaneCoins {
     	
     	int maximum = Integer.MIN_VALUE;
 
-		for(int j = 0; j < matrix[0].length; j++) {
+    	for(int j = 0; j < matrix[0].length; j++) {
 		    for(int i = 0; i < matrix.length; i++) {
 		    	if(matrix[i][j] != -1) {
 		    		if(j == 0) // first column
@@ -74,7 +74,7 @@ class PlaneCoins {
 		}
 
 		return maximum;
-    }
+  }
     
 	public static void main(String[] args) {
 		int [][]matrix = {{1, 2, 3}, {4, 5, -1}, {7, 8, 9}};
