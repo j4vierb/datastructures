@@ -35,7 +35,7 @@ public class MaximumReward {
 		int []dp = new int[N];
 		
 		dp[0] = a[0];
-		dp[1] = a[1];
+		dp[1] = a[1]; // Math.max(a[0], a[1]);
 		
 		for(int i = 2; i < N; i++) {
 			dp[i] = Math.max(dp[N-1], dp[N-2] + a[i]);
