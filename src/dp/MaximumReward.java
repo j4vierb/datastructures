@@ -51,6 +51,6 @@ public class MaximumReward {
 		MaximumReward run = new MaximumReward();
 		
 		int[] rewards = {2, 1, 3, 4, 1, 1, 2, 2, 3};
-		System.out.println("The maximum reward is of " + run.printArray(rewards) + " is " + run.maximumReward(rewards));
+		System.out.println("The maximum reward of " + run.printArray(rewards) + " is " + run.maximumReward(rewards));
 	}
 }
