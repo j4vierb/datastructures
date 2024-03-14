@@ -18,7 +18,9 @@ public class MaximumReward {
 	/**
 	 * This class implements the following recurrence relation
 	 * 
-	 * ❎ wrong
+	 * ❎ wrong: If the length of the array iw 2, then the maximum
+	 * reward is the maximum of the two elements in the array
+	 * 
 	 * dp[i] = a[i] if 0 <= i < 2
 	 * dp[i] = max(a[i] + dp[i-2], dp[i-1]) if 1 < i < n
 	 * 
@@ -30,18 +32,21 @@ public class MaximumReward {
 	 * @param a The array with the rewards in the i-th position
 	 * @return The maximum number of rewards that Luisa can collect
 	 */
-	public int maximumReward(int []a) {
-		int N = a.length;
+	public int maximumReward(int []rewards) {
+		int N = rewards.length;
 		int []dp = new int[N];
 		
-		dp[0] = a[0];
-		dp[1] = a[1]; // Math.max(a[0], a[1]);
-		
-		for(int i = 2; i < N; i++) {
-			dp[i] = Math.max(dp[N-1], dp[N-2] + a[i]);
+		dp[0] = rewards[0];
+		dp[1] = Math.max(rewards[0], rewards[1]);
+
+		for(int i = 0; i <= N; i++) {
+			if(i < 2) {
+				dp[i] = rewards[i];
+			} else if(i > 1 && i < N)
+				dp[i] = Math.max(dp[i-1], dp[i-2] + rewards[i]);
 		}
 		
-		return dp[N - 1];
+		return dp[N-1];
 	}
 	
 	/**
@@ -49,8 +54,15 @@ public class MaximumReward {
 	 */
 	public static void main(String []args) {
 		MaximumReward run = new MaximumReward();
-		
-		int[] rewards = {2, 1, 3, 4, 1, 1, 2, 2, 3};
-		System.out.println("The maximum reward of " + run.printArray(rewards) + " is " + run.maximumReward(rewards));
+
+		int[] r0 = {2, 1, 3, 4, 1, 1, 2, 2, 3};
+		int[] r1 = {2,16,9,17,19,13,14, 20,18};
+		int[] r2 = {10,40,2,23,19,45,60,7,20};
+		int[] r3 = {50,10,60,20,45,1};		
+
+		System.out.println(run.maximumReward(r0));
+		System.out.println(run.maximumReward(r1));
+		System.out.println(run.maximumReward(r2));
+		System.out.println(run.maximumReward(r3));
 	}
 }
